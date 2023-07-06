@@ -41,12 +41,12 @@ pre code {
 }
 
 .jumbotron-main * {
+    font-weight: bold;
     color: #c4135c;
 }
 
 .jumbotron-main p {
     color: #000;
-    font-weight: bold;
 }
 
 .home-header {
