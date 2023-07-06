@@ -120,18 +120,46 @@ pre code {
     width: 100%;
 }
 
-.btn-part,
-.btn-part:focus,
-.btn-part:active {
+.btn-part1,
+.btn-part1:focus,
+.btn-part1:active {
     color: #fff;
-    background-color: #c4135c;
-    border-color: #c4135c;
+    background-color: #3aaa2b;
+    border-color: #3aaa2b;
 }
 
-.btn-part:hover {
+.btn-part1:hover {
     color: #fff;
-    background-color: #c4135c;
-    border-color: #c4135c;
+    background-color: #3aaa2b;
+    border-color: #3aaa2b;
+}
+
+.btn-part2,
+.btn-part2:focus,
+.btn-part2:active {
+    color: #fff;
+    background-color: #286cac;
+    border-color: #286cac;
+}
+
+.btn-part2:hover {
+    color: #fff;
+    background-color: #286cac;
+    border-color: #286cac;
+}
+
+.btn-part3,
+.btn-part3:focus,
+.btn-part3:active {
+    color: #fff;
+    background-color: #d46011;
+    border-color: #d46011;
+}
+
+.btn-part3:hover {
+    color: #fff;
+    background-color: #d46011;
+    border-color: #d46011;
 }
 
 ul.outline {
@@ -409,5 +437,9 @@ img.img-apcs {
 
     ul.navbar-nav {
         padding-bottom: 40px;
+    }
+
+    .courses a {
+        font-size: 24px;
     }
 }
