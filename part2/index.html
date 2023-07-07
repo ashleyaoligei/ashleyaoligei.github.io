@@ -10,7 +10,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="/static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/monokai-sublime.min.css">
-    <link rel="stylesheet" href="/static/main.css?220313">
+    <link rel="stylesheet" href="/static/main.css?230707">
     <link rel="canonical" href="https://ashleybabyz168.github.io/">
 </head>
 
@@ -43,8 +43,130 @@
 <div class="container">
     <div id="ch01" class="section-divider"></div>
     <section class="section-chapter code-desc">
+        <h4>比較: 是否相等</h4>
+        <pre>
+            <code class="python">
+            # ★ 兩個數字一樣嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a == b)
+            </code>
+        </pre>
 
-    </section>
+        <h4>比較: 是否不相等</h4>
+        <pre>
+            <code class="python">
+            # ★ 兩個數字不一樣嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a != b)
+            </code>
+        </pre>
+
+        <h4>比較: 是否大於</h4>
+        <pre>
+            <code class="python">
+            # ★ a 有比 b 大嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a > b)
+            </code>
+        </pre>
+
+        <h4>比較: 是否小於</h4>
+        <pre>
+            <code class="python">
+            # ★ a 有比 b 小嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a < b)
+            </code>
+        </pre>
+
+        <h4>邏輯: and運算1(而且1)</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字最大
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            print("a", a > b and a > c)
+            print("b", b > a and b > c)
+            print("c", c > a and c > b)
+            </code>
+        </pre>
+
+        <h4>邏輯: and運算2(而且2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字最小
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            print("a", a < b and a < c)
+            print("b", b < a and b < c)
+            print("c", c < a and c < b)
+            </code>
+        </pre>
+
+        <h4>邏輯: or運算1(或者1)</h4>
+        <pre>
+            <code class="python">
+            # ★ a 或 b 有比 x 大嗎？
+            x = int(input("x: "))
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a > x or b > x)
+            </code>
+        </pre>
+
+        <h4>邏輯: or運算2(或者2)</h4>
+        <pre>
+            <code class="python">
+            # ★ a 或 b 有比 x 小嗎？
+            x = int(input("x: "))
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a < x or b < x)
+            </code>
+        </pre>
+
+        <h4>邏輯: 撒花1</h4>
+        <pre>
+            <code class="python">
+            # ★ 撒花: 男生 boy 女生 girl
+            print("老師請班長找兩個同學撒花")
+            print("兩個都要女生")
+            who1 = input("第 1 個是? ")
+            who2 = input("第 2 個是? ")
+            print(who1 == "girl" and who2 == "girl")
+            </code>
+        </pre>
+
+        <h4>邏輯: 撒花2</h4>
+        <pre>
+            <code class="python">
+            # ★ 撒花: 男生 boy 女生 girl
+            print("老師請班長找兩個同學撒花")
+            print("至少一個女生")
+            who1 = input("第 1 個是? ")
+            who2 = input("第 2 個是? ")
+            print(who1 == "girl" or who2 == "girl")
+            </code>
+        </pre>
+
+        <h4>邏輯: 撒花3</h4>
+        <pre>
+            <code class="python">
+            # ★ 撒花: 男生 boy 女生 girl
+            print("老師請班長找兩個同學撒花")
+            print("一定要有男生女生")
+            who1 = input("第 1 個是? ")
+            who2 = input("第 2 個是? ")
+            print(who1 != who2)
+            </code>
+        </pre>
+ </section>
     <hr class="footer-hr">
 
     <footer>
