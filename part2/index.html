@@ -83,6 +83,26 @@
             </code>
         </pre>
 
+        <h4>比較: 是否大於等於</h4>
+        <pre>
+            <code class="python">
+            # ★ a 有大於等於 b 嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a >= b)
+            </code>
+        </pre>
+
+        <h4>比較: 是否小於等於</h4>
+        <pre>
+            <code class="python">
+            # ★ a 有小於等於 b 嗎？
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(a <= b)
+            </code>
+        </pre>
+
         <h4>邏輯: and運算1(而且1)</h4>
         <pre>
             <code class="python">
@@ -164,6 +184,100 @@
             who1 = input("第 1 個是? ")
             who2 = input("第 2 個是? ")
             print(who1 != who2)
+            </code>
+        </pre>
+
+        <h4>選擇: 看天氣決定1</h4>
+        <pre>
+            <code class="python">
+            # ★ 選擇: sunny 晴天 rainy 雨天
+            print("Beebo: Let's hang out.")
+            weather = input("How is the weather? ")
+            if weather == "sunny":
+                print("(1) Sure. Why not?")
+            </code>
+        </pre>
+
+        <h4>選擇: 看天氣決定2</h4>
+        <pre>
+            <code class="python">
+            # ★ 選擇: sunny 晴天 rainy 雨天
+            print("Beebo: Let's hang out.")
+            weather = input("How is the weather? ")
+            if weather == "sunny":
+                print("(1) Sure. Why not?")
+            else:
+                print("(2) I want to stay home.")
+            </code>
+        </pre>
+
+        <h4>選擇: 最大數</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字最大
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            if a > b and a > c:
+                print(a, "最大")
+            elif b > a and b > c:
+                print(b, "最大")
+            elif c > a and c > b:
+                print(c, "最大")
+            </code>
+        </pre>
+
+        <h4>選擇: 最小數</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字最小
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            if a < b and a < c:
+                print(a, "最小")
+            elif b < a and b < c:
+                print(b, "最小")
+            elif c < a and c < b:
+                print(c, "最小")
+            </code>
+        </pre>
+
+        <h4>選擇: 商數與餘數</h4>
+        <pre>
+            <code class="python">
+            # ★ 商數與餘數
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(f"{a} 除以 {b}")
+            print(f"商數是 {a//b}")
+            print(f"餘數是 {a%b}")
+            </code>
+        </pre>
+
+        <h4>選擇: 奇數與偶數</h4>
+        <pre>
+            <code class="python">
+            # ★ 奇數與偶數
+            n = int(input("n: "))
+            if n % 2 == 0:
+                print(f"{n} 是偶數")
+            elif n % 2 == 1:
+                print(f"{n} 是奇數")
+            </code>
+        </pre>
+
+        <h4>選擇: 倍數</h4>
+        <pre>
+            <code class="python">
+            # ★ 倍數
+            n = int(input("n: "))
+            if n % 3 == 0:
+                print(f"{n} 是 3 的倍數")
+            elif n % 5 == 0:
+                print(f"{n} 是 5 的倍數")
+            elif n % 7 == 0:
+                print(f"{n} 是 7 的倍數")
             </code>
         </pre>
  </section>
