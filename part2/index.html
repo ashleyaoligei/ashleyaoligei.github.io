@@ -36,7 +36,7 @@
 <div id="home" class="jumbotron-main">
     <div class="container">
         <h1>第 2 部</h1>
-        <p class="lead">Part 2: 比較．邏輯．條件．選擇</p>
+        <p class="lead">比較．邏輯．條件．選擇</p>
     </div>
 </div>
 
@@ -211,6 +211,36 @@
             </code>
         </pre>
 
+        <h4>選擇: 較大數</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字比較大
+            a = int(input("a: "))
+            b = int(input("b: "))
+            if a > b:
+                print(a, "比較大")
+            elif b > a:
+                print(b, "比較大")
+            else:
+                print("一樣大")
+            </code>
+        </pre>
+
+        <h4>選擇: 較小數</h4>
+        <pre>
+            <code class="python">
+            # ★ 哪個數字比較小
+            a = int(input("a: "))
+            b = int(input("b: "))
+            if a < b:
+                print(a, "比較小")
+            elif b < a:
+                print(b, "比較小")
+            else:
+                print("一樣大")
+            </code>
+        </pre>
+
         <h4>選擇: 最大數</h4>
         <pre>
             <code class="python">
@@ -278,6 +308,22 @@
                 print(f"{n} 是 5 的倍數")
             elif n % 7 == 0:
                 print(f"{n} 是 7 的倍數")
+            </code>
+        </pre>
+
+        <h4>選擇: 考試分數</h4>
+        <pre>
+            <code class="python">
+            # ★ 考試分數
+            score = int(input("數學考幾分? "))
+            if score >= 90:
+                print("水喔！")
+            elif score >= 80:
+                print("讚！")
+            elif score >= 60:
+                print("奧利給！")
+            else:
+                print("完了！芭比Q了！")
             </code>
         </pre>
  </section>
