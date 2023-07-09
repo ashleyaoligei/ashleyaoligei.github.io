@@ -36,14 +36,71 @@
 <div id="home" class="jumbotron-main">
     <div class="container">
         <h1>第 3 部</h1>
-        <p class="lead">迴圈．數列．圖形．遊戲</p>
+        <p class="lead">迴圈．數列．圖形</p>
     </div>
 </div>
 
 <div class="container">
     <div id="ch01" class="section-divider"></div>
     <section class="section-chapter code-desc">
+        <h4>for迴圈: 輸出 1 ~ 5</h4>
+        <pre>
+            <code class="python">
+            # ★ 輸出 1 ~ 5
+            for i in range(1, 5+1):
+                print(i)
+            </code>
+        </pre>
 
+        <h4>for迴圈: 乘法表</h4>
+        <pre>
+            <code class="python">
+            # ★ 乘法表
+            n = int(input("n: "))
+            for i in range(1, 10+1):
+                print(f'{n} x {i} = {n*i}')
+            </code>
+        </pre>
+
+        <h4>for迴圈: 等差數列 (1/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 等差數列
+            for i in range(1, 20+1, 2):
+                print(i)
+            </code>
+        </pre>
+
+        <h4>for迴圈: 等差數列 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 等差數列
+            a = int(input("a: "))
+            b = int(input("b: "))
+            d = int(input("d: "))
+            for i in range(a, b+1, d):
+                print(i)
+            </code>
+        </pre>
+
+        <h4>for迴圈: 1 ~ 5 和 5 ~ 1</h4>
+        <pre>
+            <code class="python">
+            # ★ 1 ~ 5 和 5 ~ 1
+            for i in range(1, 5+1):
+                print(i, 5-i+1)
+            </code>
+        </pre>
+
+        <h4>for迴圈: 1 ~ n 和 n ~ 1</h4>
+        <pre>
+            <code class="python">
+            # ★ 1 ~ n 和 n ~ 1
+            n = int(input("n: "))
+            for i in range(1, n+1):
+                print(i, n-i+1)
+            </code>
+        </pre>
     </section>
     <hr class="footer-hr">
 

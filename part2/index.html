@@ -36,14 +36,14 @@
 <div id="home" class="jumbotron-main">
     <div class="container">
         <h1>第 2 部</h1>
-        <p class="lead">比較．邏輯．條件．選擇</p>
+        <p class="lead">比較．條件．選擇</p>
     </div>
 </div>
 
 <div class="container">
     <div id="ch01" class="section-divider"></div>
     <section class="section-chapter code-desc">
-        <h4>比較: 是否相等</h4>
+        <h4>比較: 兩個數字一樣嗎？</h4>
         <pre>
             <code class="python">
             # ★ 兩個數字一樣嗎？
@@ -53,7 +53,7 @@
             </code>
         </pre>
 
-        <h4>比較: 是否不相等</h4>
+        <h4>比較: 兩個數字不一樣嗎？</h4>
         <pre>
             <code class="python">
             # ★ 兩個數字不一樣嗎？
@@ -63,47 +63,47 @@
             </code>
         </pre>
 
-        <h4>比較: 是否大於</h4>
+        <h4>比較: 有比較大嗎？</h4>
         <pre>
             <code class="python">
-            # ★ a 有比 b 大嗎？
+            # ★ 有比較大嗎？
             a = int(input("a: "))
             b = int(input("b: "))
             print(a > b)
             </code>
         </pre>
 
-        <h4>比較: 是否小於</h4>
+        <h4>比較: 有比較小嗎？</h4>
         <pre>
             <code class="python">
-            # ★ a 有比 b 小嗎？
+            # ★ 有比較小嗎？
             a = int(input("a: "))
             b = int(input("b: "))
             print(a < b)
             </code>
         </pre>
 
-        <h4>比較: 是否大於等於</h4>
+        <h4>比較: 有大於等於嗎？</h4>
         <pre>
             <code class="python">
-            # ★ a 有大於等於 b 嗎？
+            # ★ 有大於等於嗎？
             a = int(input("a: "))
             b = int(input("b: "))
             print(a >= b)
             </code>
         </pre>
 
-        <h4>比較: 是否小於等於</h4>
+        <h4>比較: 有小於等於嗎？</h4>
         <pre>
             <code class="python">
-            # ★ a 有小於等於 b 嗎？
+            # ★ 有小於等於嗎？
             a = int(input("a: "))
             b = int(input("b: "))
             print(a <= b)
             </code>
         </pre>
 
-        <h4>邏輯: and運算1(而且1)</h4>
+        <h4>邏輯: 哪個數字最大？</h4>
         <pre>
             <code class="python">
             # ★ 哪個數字最大
@@ -116,7 +116,7 @@
             </code>
         </pre>
 
-        <h4>邏輯: and運算2(而且2)</h4>
+        <h4>邏輯: 哪個數字最小？</h4>
         <pre>
             <code class="python">
             # ★ 哪個數字最小
@@ -129,65 +129,63 @@
             </code>
         </pre>
 
-        <h4>邏輯: or運算1(或者1)</h4>
+        <h4>邏輯: 有沒有考 90 分以上的？</h4>
         <pre>
             <code class="python">
-            # ★ a 或 b 有比 x 大嗎？
-            x = int(input("x: "))
-            a = int(input("a: "))
-            b = int(input("b: "))
-            print(a > x or b > x)
+            # ★ 有沒有考 90 分以上的？
+            guoyu = int(input("國語幾分? "))
+            math = int(input("數學幾分?: "))
+            print(guoyu >= 90 or math >= 90)
             </code>
         </pre>
 
-        <h4>邏輯: or運算2(或者2)</h4>
+        <h4>邏輯: 有沒有考不及格的？</h4>
         <pre>
             <code class="python">
-            # ★ a 或 b 有比 x 小嗎？
-            x = int(input("x: "))
-            a = int(input("a: "))
-            b = int(input("b: "))
-            print(a < x or b < x)
+            # ★ 有沒有考不及格的？
+            guoyu = int(input("國語幾分? "))
+            math = int(input("數學幾分?: "))
+            print(guoyu < 60 or math < 60)
             </code>
         </pre>
 
-        <h4>邏輯: 撒花1</h4>
+        <h4>邏輯: 撒花需要兩個女生</h4>
+        <pre>
+            <code class="python">
+            # ★ 撒花: 撒花需要兩個女生
+            print("老師請班長找兩個同學撒花")
+            print("需要兩個女生")
+            p1 = input("第 1 個是? ")
+            p2 = input("第 2 個是? ")
+            print(p1 == "girl" and p2 == "girl")
+            </code>
+        </pre>
+
+        <h4>邏輯: 撒花至少要一個女生</h4>
+        <pre>
+            <code class="python">
+            # ★ 撒花: 撒花至少要一個女生
+            print("老師請班長找兩個同學撒花")
+            print("至少要一個女生")
+            p1 = input("第 1 個是? ")
+            p2 = input("第 2 個是? ")
+            print(p1 == "girl" or p2 == "girl")
+            </code>
+        </pre>
+
+        <h4>邏輯: 撒花要有男生女生</h4>
         <pre>
             <code class="python">
             # ★ 撒花: 男生 boy 女生 girl
             print("老師請班長找兩個同學撒花")
-            print("兩個都要女生")
-            who1 = input("第 1 個是? ")
-            who2 = input("第 2 個是? ")
-            print(who1 == "girl" and who2 == "girl")
+            print("要有男生女生")
+            p1 = input("第 1 個是? ")
+            p2 = input("第 2 個是? ")
+            print(p1 != p2)
             </code>
         </pre>
 
-        <h4>邏輯: 撒花2</h4>
-        <pre>
-            <code class="python">
-            # ★ 撒花: 男生 boy 女生 girl
-            print("老師請班長找兩個同學撒花")
-            print("至少一個女生")
-            who1 = input("第 1 個是? ")
-            who2 = input("第 2 個是? ")
-            print(who1 == "girl" or who2 == "girl")
-            </code>
-        </pre>
-
-        <h4>邏輯: 撒花3</h4>
-        <pre>
-            <code class="python">
-            # ★ 撒花: 男生 boy 女生 girl
-            print("老師請班長找兩個同學撒花")
-            print("一定要有男生女生")
-            who1 = input("第 1 個是? ")
-            who2 = input("第 2 個是? ")
-            print(who1 != who2)
-            </code>
-        </pre>
-
-        <h4>選擇: 看天氣決定1</h4>
+        <h4>選擇: 看天氣決定 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 選擇: sunny 晴天 rainy 雨天
@@ -198,7 +196,7 @@
             </code>
         </pre>
 
-        <h4>選擇: 看天氣決定2</h4>
+        <h4>選擇: 看天氣決定 (2/2)</h4>
         <pre>
             <code class="python">
             # ★ 選擇: sunny 晴天 rainy 雨天
@@ -211,10 +209,10 @@
             </code>
         </pre>
 
-        <h4>選擇: 較大數</h4>
+        <h4>選擇: 哪個數字比較大？</h4>
         <pre>
             <code class="python">
-            # ★ 哪個數字比較大
+            # ★ 哪個數字比較大？
             a = int(input("a: "))
             b = int(input("b: "))
             if a > b:
@@ -226,10 +224,10 @@
             </code>
         </pre>
 
-        <h4>選擇: 較小數</h4>
+        <h4>選擇: 哪個數字比較小？</h4>
         <pre>
             <code class="python">
-            # ★ 哪個數字比較小
+            # ★ 哪個數字比較小？
             a = int(input("a: "))
             b = int(input("b: "))
             if a < b:
@@ -241,10 +239,10 @@
             </code>
         </pre>
 
-        <h4>選擇: 最大數</h4>
+        <h4>選擇: 哪個數字最大？</h4>
         <pre>
             <code class="python">
-            # ★ 哪個數字最大
+            # ★ 哪個數字最大？
             a = int(input("a: "))
             b = int(input("b: "))
             c = int(input("c: "))
@@ -257,10 +255,10 @@
             </code>
         </pre>
 
-        <h4>選擇: 最小數</h4>
+        <h4>選擇: 哪個數字最小？</h4>
         <pre>
             <code class="python">
-            # ★ 哪個數字最小
+            # ★ 哪個數字最小？
             a = int(input("a: "))
             b = int(input("b: "))
             c = int(input("c: "))
@@ -273,7 +271,23 @@
             </code>
         </pre>
 
-        <h4>選擇: 商數與餘數</h4>
+        <h4>選擇: 四季英翻中</h4>
+        <pre>
+            <code class="python">
+            # ★ 四季英翻中
+            season = int(input("Which season? "))
+            if season == "spring":
+                print("春季")
+            elif season == "summer":
+                print("夏季")
+            elif season == "autumn":
+                print("秋季")
+            elif season == "winter":
+                print("冬季")
+            </code>
+        </pre>
+
+        <h4>數學除法: 商數與餘數</h4>
         <pre>
             <code class="python">
             # ★ 商數與餘數
@@ -311,11 +325,27 @@
             </code>
         </pre>
 
-        <h4>選擇: 考試分數</h4>
+        <h4>選擇: 數學分數及格嗎？</h4>
         <pre>
             <code class="python">
-            # ★ 考試分數
-            score = int(input("數學考幾分? "))
+            # ★ 數學分數及格嗎？
+            score = int(input("數學幾分? "))
+            if score == 60:
+                print("剛好及格！")
+            elif score > 60:
+                print("比 60 分高呢！")
+            elif score < 60:
+                print("完了！芭比Q了！")
+            else:
+                print("到底是什麼分數？！")
+            </code>
+        </pre>
+
+        <h4>選擇: 數學分數由高比到低</h4>
+        <pre>
+            <code class="python">
+            # ★ 數學分數由高比到低
+            score = int(input("數學幾分? "))
             if score >= 90:
                 print("水喔！")
             elif score >= 80:
@@ -324,6 +354,97 @@
                 print("奧利給！")
             else:
                 print("完了！芭比Q了！")
+            </code>
+        </pre>
+
+        <h4>選擇: 數學分數由低比到高</h4>
+        <pre>
+            <code class="python">
+            # ★ 數學分數由低比到高
+            score = int(input("數學幾分? "))
+            if score < 60:
+                print("完了！芭比Q了！")
+            elif score < 80:
+                print("奧利給！")
+            elif score < 90:
+                print("讚！")
+            else:
+                print("水喔！")
+            </code>
+        </pre>
+
+        <h4>選擇: 不可能的數學分數</h4>
+        <pre>
+            <code class="python">
+            # ★ 不可能的數學分數
+            score = int(input("數學幾分? "))
+            if score == 60:
+                print("剛好及格！")
+            elif score > 60 and score <= 100:
+                print("比 60 分高呢！")
+            elif score < 60 and score >= 0:
+                print("完了！芭比Q了！")
+            else:
+                print(f"不可能 {score} 分！")
+            </code>
+        </pre>
+
+        <h4>選擇: 剪刀石頭布</h4>
+        <pre>
+            <code class="python">
+            # ★ 剪刀石頭布
+            import random
+            alist = ['rock', 'paper', 'scissors']
+            player = input("要出什麼? ")
+            computer = random.choice(alist)
+            if player == computer:
+                print("平手！")
+            elif player == "rock" and computer == "scissors":
+                print("贏了！")
+            elif player == "paper" and computer == "rock":
+                print("贏了！")
+            elif player == "scissors" and computer == "paper":
+                print("贏了！")
+            else:
+                print("輸給電腦了！")
+            </code>
+        </pre>
+
+        <h4>選擇: 動物連連看 (1/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 動物連連看
+            furry = input("選有毛的嗎? (y/n) ")
+            small = input("選小隻的嗎? (y/n) ")
+            if furry == "y":
+                if small == "y":
+                    print("小貓咪")
+                else:
+                    print("小熊熊")
+            else:
+                if small == "y":
+                    print("小壁虎")
+                else:
+                    print("小鱷魚")
+            </code>
+        </pre>
+
+        <h4>選擇: 動物連連看 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 動物連連看
+            small = input("選小隻的嗎? (y/n) ")
+            furry = input("選有毛的嗎? (y/n) ")
+            if small == "y":
+                if furry == "y":
+                    print("小貓咪")
+                else:
+                    print("小壁虎")
+            else:
+                if furry == "y":
+                    print("小熊熊")
+                else:
+                    print("小鱷魚")
             </code>
         </pre>
  </section>
