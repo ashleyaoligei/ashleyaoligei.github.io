@@ -133,9 +133,9 @@
         <pre>
             <code class="python">
             # ★ 有沒有考 90 分以上的？
-            guoyu = int(input("國語幾分? "))
+            chinese = int(input("國語幾分? "))
             math = int(input("數學幾分?: "))
-            print(guoyu >= 90 or math >= 90)
+            print(chinese >= 90 or math >= 90)
             </code>
         </pre>
 
@@ -143,9 +143,9 @@
         <pre>
             <code class="python">
             # ★ 有沒有考不及格的？
-            guoyu = int(input("國語幾分? "))
+            chinese = int(input("國語幾分? "))
             math = int(input("數學幾分?: "))
-            print(guoyu < 60 or math < 60)
+            print(chinese < 60 or math < 60)
             </code>
         </pre>
 
@@ -333,9 +333,9 @@
             if score == 60:
                 print("剛好及格！")
             elif score > 60:
-                print("比 60 分高呢！")
+                print("比 60 分高！")
             elif score < 60:
-                print("完了！芭比Q了！")
+                print("完了！")
             else:
                 print("到底是什麼分數？！")
             </code>
@@ -349,11 +349,11 @@
             if score >= 90:
                 print("水喔！")
             elif score >= 80:
-                print("讚！")
+                print("讚喔！")
             elif score >= 60:
-                print("奧利給！")
+                print("還行！")
             else:
-                print("完了！芭比Q了！")
+                print("完了！")
             </code>
         </pre>
 
@@ -363,11 +363,11 @@
             # ★ 數學分數由低比到高
             score = int(input("數學幾分? "))
             if score < 60:
-                print("完了！芭比Q了！")
+                print("完了！")
             elif score < 80:
-                print("奧利給！")
+                print("還行！")
             elif score < 90:
-                print("讚！")
+                print("讚喔！")
             else:
                 print("水喔！")
             </code>
@@ -381,9 +381,9 @@
             if score == 60:
                 print("剛好及格！")
             elif score > 60 and score <= 100:
-                print("比 60 分高呢！")
+                print("比 60 分高！")
             elif score < 60 and score >= 0:
-                print("完了！芭比Q了！")
+                print("完了！")
             else:
                 print(f"不可能 {score} 分！")
             </code>
