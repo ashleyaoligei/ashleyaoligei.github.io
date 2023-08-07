@@ -333,45 +333,13 @@
             # ★ 對數學分數的反應
             score = int(input("數學幾分? "))
             if score == 60:
-                print("剛好及格！")
+                print("剛剛好的及格！")
             elif score > 60:
-                print("好喔！")
+                print("有及格！")
             elif score < 60:
-                print("完了！")
+                print("沒及格！")
             else:
                 print("到底是什麼分數？！")
-            </code>
-        </pre>
-
-        <h4>選擇: 數學分數由高比到低</h4>
-        <pre>
-            <code class="python">
-            # ★ 數學分數由高比到低
-            score = int(input("數學幾分? "))
-            if score >= 90:
-                print("水喔！")
-            elif score >= 80:
-                print("讚喔！")
-            elif score >= 60:
-                print("還行！")
-            else:
-                print("完了！")
-            </code>
-        </pre>
-
-        <h4>選擇: 數學分數由低比到高</h4>
-        <pre>
-            <code class="python">
-            # ★ 數學分數由低比到高
-            score = int(input("數學幾分? "))
-            if score < 60:
-                print("完了！")
-            elif score < 80:
-                print("還行！")
-            elif score < 90:
-                print("讚喔！")
-            else:
-                print("水喔！")
             </code>
         </pre>
 
@@ -381,11 +349,11 @@
             # ★ 不可能的數學分數
             score = int(input("數學幾分? "))
             if score == 60:
-                print("剛好及格！")
+                print("剛剛好的及格！")
             elif score > 60 and score <= 100:
-                print("好喔！")
+                print("有及格！")
             elif score < 60 and score >= 0:
-                print("完了！")
+                print("沒及格！")
             else:
                 print(f"不可能 {score} 分！")
             </code>
@@ -447,6 +415,48 @@
                     print("小熊熊")
                 else:
                     print("小鱷魚")
+            </code>
+        </pre>
+
+        <h4>選擇: 數學分數由高比到低</h4>
+        <pre>
+            <code class="python">
+            # ★ 數學分數由高比到低
+            score = int(input("Math Score? "))
+            if score >= 0 and score <= 100:
+                if score == 100:
+                    print("Excellent!")
+                elif score >= 90:
+                    print("Good!")
+                elif score >= 70:
+                    print("Fair!")
+                elif score >= 60:
+                    print("Poor!")
+                else:
+                    print("Bad!")
+            else:
+                print("Wrong!")
+            </code>
+        </pre>
+
+        <h4>選擇: 數學分數由低比到高</h4>
+        <pre>
+            <code class="python">
+            # ★ 數學分數由低比到高
+            score = int(input("Math Score? "))
+            if score >= 0 and score <= 100:
+                if score < 60:
+                    print("Bad!")
+                elif score < 70:
+                    print("Poor!")
+                elif score < 90:
+                    print("Fair!")
+                elif score < 100:
+                    print("Good!")
+                else:
+                    print("Excellent!")
+            else:
+                print("Wrong!")
             </code>
         </pre>
  </section>
