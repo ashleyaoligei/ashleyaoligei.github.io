@@ -240,11 +240,11 @@
             a = int(input("a: "))
             b = int(input("b: "))
             if a > b:
-                print(a, "比較大")
+                print(f"{a} is larger.")
             elif b > a:
-                print(b, "比較大")
+                print(f"{b} is larger.")
             else:
-                print("一樣大")
+                print(f"{a} and {b} are the same.")
             </code>
         </pre>
 
@@ -254,44 +254,80 @@
             # ★ 比較小的數字
             a = int(input("a: "))
             b = int(input("b: "))
-            if a < b:
-                print(a, "比較小")
-            elif b < a:
-                print(b, "比較小")
+            if a > b:
+                print(f"{a} is smaller.")
+            elif b > a:
+                print(f"{b} is smaller.")
             else:
-                print("一樣大")
+                print(f"{a} and {b} are the same.")
             </code>
         </pre>
 
-        <h4>選擇: 最大的數字</h4>
+        <h4>選擇: 最大的數字 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 最大的數字
             a = int(input("a: "))
             b = int(input("b: "))
             c = int(input("c: "))
+            largest = None
             if a > b and a > c:
-                print(a, "最大")
+                largest = a
             elif b > a and b > c:
-                print(b, "最大")
+                largest = b
             elif c > a and c > b:
-                print(c, "最大")
+                largest = c
+            print(f"{largest} is the largest number.")
             </code>
         </pre>
 
-        <h4>選擇: 最小的數字</h4>
+        <h4>選擇: 最大的數字 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 最大的數字
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            largest = a
+            if b > largest:
+                largest = b
+            if c > largest:
+                largest = c
+            print(f"{largest} is the largest number.")
+            </code>
+        </pre>
+
+        <h4>選擇: 最小的數字 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 最小的數字
             a = int(input("a: "))
             b = int(input("b: "))
             c = int(input("c: "))
+            smallest = None
             if a < b and a < c:
-                print(a, "最小")
+                smallest = a
             elif b < a and b < c:
-                print(b, "最小")
+                smallest = b
             elif c < a and c < b:
-                print(c, "最小")
+                smallest = c
+            print(f"{smallest} is the smallest number.")
+            </code>
+        </pre>
+
+        <h4>選擇: 最小的數字 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 最小的數字
+            a = int(input("a: "))
+            b = int(input("b: "))
+            c = int(input("c: "))
+            smallest = a
+            if b < smallest:
+                smallest = b
+            if c < smallest:
+                smallest = c
+            print(f"{smallest} is the smallest number.")
             </code>
         </pre>
 
@@ -311,19 +347,31 @@
             </code>
         </pre>
 
-        <h4>數學除法: 商數與餘數</h4>
+        <h4>數學除法: 商數與餘數 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 商數與餘數
             a = int(input("a: "))
             b = int(input("b: "))
-            print(f"{a} 除以 {b}")
+            print(f"{a} 除以 {b} =")
             print(f"商數是 {a//b}")
             print(f"餘數是 {a%b}")
             </code>
         </pre>
 
-        <h4>選擇: 奇數與偶數</h4>
+        <h4>數學除法: 商數與餘數 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 商數與餘數
+            a = int(input("a: "))
+            b = int(input("b: "))
+            print(f"{a} divided by {b} =")
+            print(f"The quotient is {a//b}.")
+            print(f"The remainder is {a%b}.")
+            </code>
+        </pre>
+
+        <h4>選擇: 奇數與偶數 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 奇數與偶數
@@ -332,6 +380,18 @@
                 print(f"{n} 是偶數")
             elif n % 2 == 1:
                 print(f"{n} 是奇數")
+            </code>
+        </pre>
+
+        <h4>選擇: 奇數與偶數 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 奇數與偶數
+            n = int(input("n: "))
+            if n % 2 == 0:
+                print(f"{n} is an even number.")
+            elif n % 2 == 1:
+                print(f"{n} is an odd number.")
             </code>
         </pre>
 
@@ -479,6 +539,23 @@
                     print("Excellent!")
             else:
                 print("Wrong!")
+            </code>
+        </pre>
+
+        <h4>選擇: 乘法測驗</h4>
+        <pre>
+            <code class="python">
+            # ★ 乘法測驗
+            import random
+            alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            a = random.choice(alist)
+            b = random.choice(alist)
+            answer = a * b
+            guess = int(input(f"{a} * {b} = "))
+            if guess == answer:
+                print("答對！")
+            else:
+                print(f"答錯！正確答案是 {answer}")
             </code>
         </pre>
  </section>
