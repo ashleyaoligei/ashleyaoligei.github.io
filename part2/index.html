@@ -210,7 +210,7 @@
             </code>
         </pre>
 
-        <h4>選擇: 看天氣決定 (1/2)</h4>
+        <h4>選擇: 看天氣決定 (1/3)</h4>
         <pre>
             <code class="python">
             # ★ 選擇: 看天氣決定
@@ -222,14 +222,28 @@
             </code>
         </pre>
 
-        <h4>選擇: 看天氣決定 (2/2)</h4>
+        <h4>選擇: 看天氣決定 (2/3)</h4>
         <pre>
             <code class="python">
             # ★ 選擇: 看天氣決定
-            # sunny 晴天 rainy 雨天
+            # sunny 晴天 rainy 雨天 hot 很熱 cold 很冷
             print("Beebo: Let's hang out.")
             weather = input("How is the weather? ")
             if weather == "sunny":
+                print("Sure. Why not?")
+            else:
+                print("I want to stay home.")
+            </code>
+        </pre>
+
+        <h4>選擇: 看天氣決定 (3/3)</h4>
+        <pre>
+            <code class="python">
+            # ★ 選擇: 看天氣決定
+            # sunny 晴天 rainy 雨天 hot 很熱 cold 很冷
+            print("Beebo: Let's hang out.")
+            weather = input("How is the weather? ")
+            if weather == "sunny" or weather == "Sunny":
                 print("Sure. Why not?")
             else:
                 print("I want to stay home.")
