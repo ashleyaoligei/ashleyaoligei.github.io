@@ -261,14 +261,34 @@
             </code>
         </pre>
 
+        <h4>迴圈: 奇數偶數個數</h4>
+        <pre>
+            <code class="python">
+            # ★ 奇數偶數個數
+            n = int(input("算幾個整數? "))
+            odd = 0
+            even = 0
+            for i in range(n):
+                number = int(input())
+                if number % 2 == 0:
+                    print(f"{number} 是偶數")
+                    even = even + 1
+                elif number % 2 == 1:
+                    print(f"{number} 是奇數")
+                    odd = odd + 1
+            print()
+            print(f"{odd} 個奇數")
+            print(f"{even} 個偶數")
+            </code>
+        </pre>
+
         <h4>迴圈: 剪刀石頭布</h4>
         <pre>
             <code class="python">
             # ★ 剪刀石頭布
             import random
             alist = ['rock', 'paper', 'scissors']
-
-            n = int(input("幾次? "))
+            n = int(input("猜拳猜幾次? "))
             print()
             for i in range(n):
                 print(*alist)
@@ -288,25 +308,46 @@
             </code>
         </pre>
 
-        <h4>迴圈: 乘法測驗</h4>
+        <h4>迴圈: 乘法測驗 (1/2)</h4>
         <pre>
             <code class="python">
-           # ★ 乘法測驗
-           import random
-           alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            # ★ 乘法測驗
+            import random
+            alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            n = int(input("考幾題乘法? "))
+            print()
+            for i in range(n):
+                a = random.choice(alist)
+                b = random.choice(alist)
+                answer = a * b
+                guess = int(input(f"{a} * {b} = "))
+                if guess == answer:
+                    print("答對！")
+                else:
+                    print(f"答錯！正確答案是 {answer}")
+                print()
+            </code>
+        </pre>
 
-           n = int(input("幾題? "))
-           print()
-           for i in range(n):
-               a = random.choice(alist)
-               b = random.choice(alist)
-               answer = a * b
-               guess = int(input(f"{a} * {b} = "))
-               if guess == answer:
-                   print("答對！")
-               else:
-                   print(f"答錯！正確答案是 {answer}")
-               print()
+        <h4>迴圈: 乘法測驗 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 乘法測驗
+            import random
+            alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            blist = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            n = int(input("考幾題乘法? "))
+            print()
+            for i in range(n):
+                a = random.choice(alist)
+                b = random.choice(blist)
+                answer = a * b
+                guess = int(input(f"{a} * {b} = "))
+                if guess == answer:
+                    print("答對！")
+                else:
+                    print(f"答錯！正確答案是 {answer}")
+                print()
             </code>
         </pre>
     </section>

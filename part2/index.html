@@ -358,9 +358,9 @@
             largest = None
             if a > b and a > c:
                 largest = a
-            elif b > a and b > c:
+            if b > a and b > c:
                 largest = b
-            elif c > a and c > b:
+            if c > a and c > b:
                 largest = c
             print(f"{largest} is the largest number.")
             </code>
@@ -374,10 +374,13 @@
             b = int(input("b: "))
             c = int(input("c: "))
             largest = a
+            print(f"largest = {a}")
             if b > largest:
                 largest = b
+                print(f"largest = {b}")
             if c > largest:
                 largest = c
+                print(f"largest = {c}")
             print(f"{largest} is the largest number.")
             </code>
         </pre>
@@ -392,9 +395,9 @@
             smallest = None
             if a < b and a < c:
                 smallest = a
-            elif b < a and b < c:
+            if b < a and b < c:
                 smallest = b
-            elif c < a and c < b:
+            if c < a and c < b:
                 smallest = c
             print(f"{smallest} is the smallest number.")
             </code>
@@ -408,10 +411,13 @@
             b = int(input("b: "))
             c = int(input("c: "))
             smallest = a
+            print(f"smallest = {a}")
             if b < smallest:
                 smallest = b
+                print(f"smallest = {b}")
             if c < smallest:
                 smallest = c
+                print(f"smallest = {c}")
             print(f"{smallest} is the smallest number.")
             </code>
         </pre>
