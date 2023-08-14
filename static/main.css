@@ -366,29 +366,9 @@ img.img-apcs {
     margin-top: 60px;
 }
 
-.icon-block  {
-    color: #fff;
-    padding: 50px 30px;
-}
-
-.icon-block i {
-    opacity: 0.9;
-}
-
-.icon-pybasic {
-    background-color: #c4135c;
-}
-
-.icon-ccbasic {
-    background-color: #9c004c;
-}
-
-.icon-links {
-    background-color: #333;
-}
-
-.icon-apcs {
-    background-color: #1a68a7;
+.icon-python,
+.icon-cplusplus {
+    font-size: 3em;
 }
 
 @media screen and (max-device-width: 640px) {
