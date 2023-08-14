@@ -546,16 +546,36 @@
             </code>
         </pre>
 
-        <h4>選擇: 不可能的數學分數</h4>
+        <h4>選擇: 不可能的數學分數 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 不可能的數學分數
             score = int(input("數學幾分? "))
             if score == 60:
                 print("剛好及格！")
-            elif score > 60 and score <= 100:
+            elif score >= 61 and score <= 100:
                 print("有及格！")
-            elif score < 60 and score >= 0:
+            elif score >=  0 and score <=  59:
+                print("沒及格！")
+            else:
+                print(f"不可能 {score} 分！")
+            </code>
+        </pre>
+
+        <h4>選擇: 不可能的數學分數 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 不可能的數學分數
+            score = int(input("數學幾分? "))
+            if score == 60:
+                print("剛好及格！")
+            elif score == 100:
+                print("滿分！好棒！")
+            elif score == 0:
+                print("完了！芭比Q了！")
+            elif score >= 61 and score <= 99:
+                print("有及格！")
+            elif score >=  1 and score <= 59:
                 print("沒及格！")
             else:
                 print(f"不可能 {score} 分！")
