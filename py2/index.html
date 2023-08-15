@@ -585,12 +585,15 @@
         <h4>選擇: 剪刀石頭布</h4>
         <pre>
             <code class="python">
-            # ★ 剪刀石頭布
+            # 匯入亂數模組
             import random
-            alist = ['rock', 'paper', 'scissors']
+            # list: 串列，可放一堆整數或字串
+            alist = ["rock", "paper", "scissors"]
             print(*alist)
+            # 玩家輸入 vs. 電腦亂選
             player = input("要出什麼? ")
             computer = random.choice(alist)
+            print(f"電腦出的: {computer}")
             if player == computer:
                 print("平手！")
             elif player == "rock" and computer == "scissors":
@@ -722,7 +725,9 @@
         <pre>
             <code class="python">
             # ★ 乘法測驗
+            # 匯入亂數模組
             import random
+            # list: 串列，可放一堆整數或字串
             alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
             a = random.choice(alist)
             b = random.choice(alist)
