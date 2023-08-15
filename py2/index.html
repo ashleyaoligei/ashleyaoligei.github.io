@@ -604,7 +604,7 @@
             </code>
         </pre>
 
-        <h4>選擇: 動物連連看 (1/2)</h4>
+        <h4>選擇: 動物連連看 (1/4)</h4>
         <pre>
             <code class="python">
             # ★ 動物連連看
@@ -623,7 +623,7 @@
             </code>
         </pre>
 
-        <h4>選擇: 動物連連看 (2/2)</h4>
+        <h4>選擇: 動物連連看 (2/4)</h4>
         <pre>
             <code class="python">
             # ★ 動物連連看
@@ -638,6 +638,40 @@
                 if furry == "y":
                     print("小熊熊")
                 else:
+                    print("小鱷魚")
+            </code>
+        </pre>
+
+        <h4>選擇: 動物連連看 (3/4)</h4>
+        <pre>
+            <code class="python">
+            # ★ 動物連連看
+            furry = input("選有毛的嗎? (y/n) ")
+            small = input("選小隻的嗎? (y/n) ")
+            if furry == "y" and small == "y":
+                    print("小貓咪")
+            elif furry == "y" and small == "n":
+                    print("小熊熊")
+            elif furry == "n" and small == "y":
+                    print("小壁虎")
+            elif furry == "n" and small == "n":
+                    print("小鱷魚")
+            </code>
+        </pre>
+
+        <h4>選擇: 動物連連看 (4/4)</h4>
+        <pre>
+            <code class="python">
+            # ★ 動物連連看
+            small = input("選小隻的嗎? (y/n) ")
+            furry = input("選有毛的嗎? (y/n) ")
+            if small == "y" and furry == "y":
+                    print("小貓咪")
+            elif small == "y" and furry == "n":
+                    print("小壁虎")
+            elif small == "n" and furry == "y":
+                    print("小熊熊")
+            elif small == "n" and furry == "n":
                     print("小鱷魚")
             </code>
         </pre>
