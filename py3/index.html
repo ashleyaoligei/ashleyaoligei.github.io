@@ -43,7 +43,32 @@
 <div class="container">
     <div id="ch01" class="section-divider"></div>
     <section class="section-chapter code-desc">
-        <h4>for迴圈: 輸出連續整數</h4>
+        <h4>for迴圈: 輸出連續整數 (1/3)</h4>
+        <pre>
+            <code class="python">
+            # ★ 輸出連續整數
+            print(1)
+            print(2)
+            print(3)
+            print(4)
+            print(5)
+            </code>
+        </pre>
+
+        <h4>for迴圈: 輸出連續整數 (2/3)</h4>
+        <pre>
+            <code class="python">
+            # ★ 輸出連續整數
+            # for 迴圈變數 in 一堆數據:
+            # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
+            # 迴圈變數，不一定要在迴圈中使用
+            # 數據讀完，就離開迴圈
+            for i in range(1, 5+1):
+                print(i)
+            </code>
+        </pre>
+
+        <h4>for迴圈: 輸出連續整數 (3/3)</h4>
         <pre>
             <code class="python">
             # ★ 輸出連續整數
@@ -57,7 +82,62 @@
             </code>
         </pre>
 
-        <h4>for迴圈: 乘法表</h4>
+        <h4>for迴圈: 輸出字串 (1/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 輸出字串
+            # for 迴圈變數 in 一堆數據:
+            # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
+            # 迴圈變數，不一定要在迴圈中使用
+            # 數據讀完，就離開迴圈
+            n = int(input("n: "))
+            for i in range(1, n+1):
+                print(i, "A")
+            </code>
+        </pre>
+
+        <h4>for迴圈: 輸出字串 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 輸出字串
+            # for 迴圈變數 in 一堆數據:
+            # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
+            # 迴圈變數，不一定要在迴圈中使用
+            # 數據讀完，就離開迴圈
+            n = int(input("n: "))
+            for i in range(1, n+1):
+                print(i, "A")
+                print(i, "B")
+            print(i, "Z")
+            </code>
+        </pre>
+
+        <h4>for迴圈: Beboo 和 Bobee</h4>
+        <pre>
+            <code class="python">
+            # ★ Beboo 和 Bobee
+            n = int(input("n: "))
+            for i in range(1, n+1):
+                print(i, "Beboo")
+                print(i, "Bobee")
+            print(i, "Stop!")
+            </code>
+        </pre>
+
+        <h4>for迴圈: 乘法表 (1/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 乘法表
+            # range(stop): 0 ~ stop-1
+            # range(start, stop): start ~ stop-1
+            # range(1, 10): 產生一堆整數，範圍從 1 到 10-1
+            n = int(input("n: "))
+            for i in range(10):
+                print(f"{n} x {i} = {n*i}")
+            </code>
+        </pre>
+
+        <h4>for迴圈: 乘法表 (2/2)</h4>
         <pre>
             <code class="python">
             # ★ 乘法表
@@ -104,6 +184,62 @@
             n = int(input("n: "))
             for i in range(1, n+1):
                 print(i, n-i+1)
+            </code>
+        </pre>
+
+        <h4>彙總: 整數的總和</h4>
+        <pre>
+            <code class="python">
+            # ★ 整數的總和
+            n = int(input("n: "))
+            # 迴圈之前，預設 total 等於 0
+            total = 0
+            for i in range(1, n+1):
+                number = int(input(f"第 {i} 個數: "))
+                total = total + number
+            print()
+            print(f"總和: {total}")
+            </code>
+        </pre>
+
+        <h4>彙總: 奇數的個數</h4>
+        <pre>
+            <code class="python">
+            # ★ 奇數的個數
+            n = int(input("n: "))
+            # 迴圈之前，預設 odd_count 等於 0
+            odd_count = 0
+            for i in range(1, n+1):
+                number = int(input(f"第 {i} 個數: "))
+                if number % 2 == 1:
+                    odd_count = odd_count + 1
+            print()
+            print(f"奇數個數: {odd_count}")
+            </code>
+        </pre>
+
+        <h4>彙總: 奇數偶數的總和與個數</h4>
+        <pre>
+            <code class="python">
+            # ★ 奇數偶數的總和與個數
+            n = int(input("n: "))
+            odd_total = 0
+            odd_count = 0
+            even_total = 0
+            even_count = 0
+            for i in range(1, n+1):
+                number = int(input(f"第 {i} 個數: "))
+                if number % 2 == 0:
+                    even_total = even_total + number
+                    even_count = even_count + 1
+                elif number % 2 == 1:
+                    odd_total = odd_total + number
+                    odd_count = odd_count + 1
+            print()
+            print(f"奇數總和: {odd_total}")
+            print(f"奇數個數: {odd_count}")
+            print(f"偶數總和: {even_total}")
+            print(f"偶數個數: {even_count}")
             </code>
         </pre>
 
