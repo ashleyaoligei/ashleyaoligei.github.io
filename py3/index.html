@@ -62,8 +62,9 @@
             # for 迴圈變數 in 一堆數據:
             # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
             # 迴圈變數，不一定要在迴圈中使用
-            # 數據讀完，就離開迴圈
-            for i in range(1, 5+1):
+            # i: integer 整數
+            # range(5): 從 0 開始算 5 個整數
+            for i in range(1, 5):
                 print(i)
             </code>
         </pre>
@@ -74,41 +75,39 @@
             # ★ 輸出連續整數
             # for 迴圈變數 in 一堆數據:
             # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
-            # 迴圈變數，不一定要在迴圈中使用
-            # 數據讀完，就離開迴圈
+            # i: integer 整數
+            # range(1, 11): 從 1 開始到 11-1=10 共 10 個
             n = int(input("n: "))
             for i in range(1, n+1):
                 print(i)
             </code>
         </pre>
 
-        <h4>for迴圈: 輸出字串 (1/2)</h4>
+        <h4>for迴圈: 輸出符號 (1/2)</h4>
         <pre>
             <code class="python">
-            # ★ 輸出字串
+            # ★ 輸出符號
             # for 迴圈變數 in 一堆數據:
             # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
             # 迴圈變數，不一定要在迴圈中使用
-            # 數據讀完，就離開迴圈
             n = int(input("n: "))
             for i in range(1, n+1):
-                print(i, "A")
+                print(i, "*")
             </code>
         </pre>
 
-        <h4>for迴圈: 輸出字串 (2/2)</h4>
+        <h4>for迴圈: 輸出符號 (2/2)</h4>
         <pre>
             <code class="python">
-            # ★ 輸出字串
+            # ★ 輸出符號
             # for 迴圈變數 in 一堆數據:
             # 每次迴圈，從一堆數據中讀取一個，存到迴圈變數
             # 迴圈變數，不一定要在迴圈中使用
-            # 數據讀完，就離開迴圈
             n = int(input("n: "))
             for i in range(1, n+1):
-                print(i, "A")
-                print(i, "B")
-            print(i, "Z")
+                print(i, "\\")
+                print(i, "/")
+            print(i, "*")
             </code>
         </pre>
 
