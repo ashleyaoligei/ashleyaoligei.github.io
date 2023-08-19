@@ -128,7 +128,7 @@
             # ★ 乘法表
             # range(stop): 0 ~ stop-1
             # range(start, stop): start ~ stop-1
-            # range(1, 10): 產生一堆整數，範圍從 1 到 10-1
+            # range(10): 從 0 開始到 10-1=9 共 10 個整數
             n = int(input("n: "))
             for i in range(10):
                 print(f"{n} x {i} = {n*i}")
@@ -139,16 +139,16 @@
         <pre>
             <code class="python">
             # ★ 乘法表
-            # range(stop): 0 ~ stop-1
-            # range(start, stop): start ~ stop-1
-            # range(1, 10): 產生一堆整數，範圍從 1 到 10-1
+            # range(停止數): 0 ~ 停止數-1
+            # range(開始數, 停止數): 開始數 ~ 停止數-1
+            # range(1, 10+1): 從 1 開始到 10 共 10 個整數
             n = int(input("n: "))
             for i in range(1, 10+1):
                 print(f"{n} x {i} = {n*i}")
             </code>
         </pre>
 
-        <h4>for迴圈: 1~n 和 n~1</h4>
+        <h4>for迴圈: 數字倒數</h4>
         <pre>
             <code class="python">
             # ★ 1~n 和 n~1
