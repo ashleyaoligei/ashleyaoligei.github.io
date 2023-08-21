@@ -93,6 +93,10 @@ pre code {
     font-size: 18px;
 }
 
+.font-lg {
+    font-size: 24px;
+}
+
 .btn:hover {
     cursor: pointer;
 }
@@ -118,6 +122,20 @@ pre code {
 
 .btn-block .btn {
     width: 100%;
+}
+
+.btn-udemy,
+.btn-udemy:focus,
+.btn-udemy:active {
+    color: #fff;
+    background-color: #8910dd;
+    border-color: #8910dd;
+}
+
+.btn-udemy:hover {
+    color: #fff;
+    background-color: #7c0fc8;
+    border-color: #7c0fc8;
 }
 
 .btn-part1,
