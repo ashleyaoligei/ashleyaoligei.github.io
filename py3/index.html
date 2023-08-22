@@ -226,14 +226,35 @@
             </code>
         </pre>
 
-        <h4>星號圖形: 長方形</h4>
+        <h4>星號圖形: 長方形 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 長方形
+            # 左右兩邊的邊長：長 (length)
+            # 上下兩邊的邊長：寬 (width)
+            # 長是多少，就要有多少行
+            # 寬是多少，每行就要有多少星號
             length = int(input("長: "))
             width = int(input("寬: "))
             for i in range(length):
                 print("*"*width)
+            </code>
+        </pre>
+
+        <h4>星號圖形: 長方形 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 長方形
+            # 左右兩邊的邊長：長 (length)
+            # 上下兩邊的邊長：寬 (width)
+            # 長是多少，就要有多少行
+            # 寬是多少，每行就要有多少星號
+            length = int(input("長: "))
+            width = int(input("寬: "))
+            for i in range(length):
+                print("*"*width)
+            total = length*width
+            print(f"總共: {total} 顆星")
             </code>
         </pre>
 
