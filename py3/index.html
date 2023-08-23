@@ -258,6 +258,25 @@
             </code>
         </pre>
 
+        <h4>星號圖形: 長方形的長短邊</h4>
+        <pre>
+            <code class="python">
+            # ★ 長方形的長短邊
+            # 長邊 (long side)
+            # 短邊 (short side)
+            sideA = int(input("邊長A: "))
+            sideB = int(input("邊長B: "))
+            if sideA > sideB:
+                long = sideA
+                short = sideB
+            elif sideA <= sideB:
+                long = sideB
+                short = sideA
+            for i in range(long):
+                print("*"*short)
+            </code>
+        </pre>
+
         <h4>星號圖形: 正左直角</h4>
         <pre>
             <code class="python">
