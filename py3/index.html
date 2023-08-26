@@ -391,7 +391,7 @@
             </code>
         </pre>
 
-        <h4>字串: ABCD 狗咬豬 (1/2)</h4>
+        <h4>字串: ABCD 狗咬豬 (1/3)</h4>
         <pre>
             <code class="python">
             # ★ ABCD 狗咬豬
@@ -405,7 +405,7 @@
             </code>
         </pre>
 
-        <h4>字串: ABCD 狗咬豬 (2/2)</h4>
+        <h4>字串: ABCD 狗咬豬 (2/3)</h4>
         <pre>
             <code class="python">
             # ★ ABCD 狗咬豬
@@ -427,9 +427,43 @@
                     print(f"{achar} 小寫")
                 else:
                     print("不是字母")
+            # 離開迴圈，才輸出大寫小寫字母個數
             print()
             print(f"大寫個數: {upper_count}")
             print(f"小寫個數: {lower_count}")
+            </code>
+        </pre>
+
+        <h4>字串: ABCD 狗咬豬 (3/3)</h4>
+        <pre>
+            <code class="python">
+            # ★ ABCD 狗咬豬
+            # 計算大寫小寫字母個數
+            # 字串 (string)
+            # 字元 (character)
+            # 例句: ABCD Gao Gar D
+            astr = input("一句英文: ")
+            upper_count = 0  # 大寫 (upper case)
+            lower_count = 0  # 小寫 (lower case)
+            letter_count = 0 # 字母
+            for achar in astr:
+                # str.isupper() 檢查是不是大寫字母
+                # str.islower() 檢查是不是小寫字母
+                if achar.isupper():   # 如果 achar 是大寫
+                    print(f"{achar} 大寫")
+                    upper_count = upper_count + 1
+                    letter_count = letter_count + 1
+                elif achar.islower(): # 如果 achar 是小寫
+                    lower_count = lower_count + 1
+                    letter_count = letter_count + 1
+                    print(f"{achar} 小寫")
+                else:
+                    print("不是字母")
+            # 離開迴圈，才輸出大寫小寫字母個數
+            print()
+            print(f"大寫個數: {upper_count}")
+            print(f"小寫個數: {lower_count}")
+            print(f"字母個數: {letter_count}")
             </code>
         </pre>
 
