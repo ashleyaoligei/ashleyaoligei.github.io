@@ -420,11 +420,16 @@
                 # str.isupper() 檢查是不是大寫字母
                 # str.islower() 檢查是不是小寫字母
                 if achar.isupper():   # 如果 achar 是大寫
+                    print(f"{achar} 大寫")
                     upper_count = upper_count + 1
                 elif achar.islower(): # 如果 achar 是小寫
                     lower_count = lower_count + 1
-            print(f"大寫字母 {upper_count} 個")
-            print(f"小寫字母 {lower_count} 個")
+                    print(f"{achar} 小寫")
+                else:
+                    print("不是字母")
+            print()
+            print(f"大寫個數: {upper_count}")
+            print(f"小寫個數: {lower_count}")
             </code>
         </pre>
 
