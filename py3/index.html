@@ -414,12 +414,14 @@
             # 字元 (character)
             # 例句: ABCD Gao Gar D
             astr = input("一句英文: ")
-            upper_count = 0
-            lower_count = 0
+            upper_count = 0 # 大寫 (upper case)
+            lower_count = 0 # 小寫 (lower case)
             for achar in astr:
-                if achar.isupper():
+                # str.isupper() 檢查是不是大寫字母
+                # str.islower() 檢查是不是小寫字母
+                if achar.isupper():   # 如果 achar 是大寫
                     upper_count = upper_count + 1
-                elif achar.islower():
+                elif achar.islower(): # 如果 achar 是小寫
                     lower_count = lower_count + 1
             print(f"大寫字母 {upper_count} 個")
             print(f"小寫字母 {lower_count} 個")
@@ -431,10 +433,10 @@
             <code class="python">
             # ★ 奇數偶數的總和與個數
             n = int(input("n: "))
-            odd_total = 0
-            odd_count = 0
-            even_total = 0
-            even_count = 0
+            odd_total = 0  # 奇數總和
+            odd_count = 0  # 奇數個數
+            even_total = 0 # 偶數總和
+            even_count = 0 # 偶數個數
             for i in range(1, n+1):
                 number = int(input(f"第 {i} 個數: "))
                 if number % 2 == 0:
