@@ -492,6 +492,34 @@
             </code>
         </pre>
 
+        <h4>while迴圈: 無窮迴圈</h4>
+        <pre>
+            <code class="python">
+            # ★ 無窮迴圈
+            while True:
+                a = int(input("> "))
+                print(a*a)
+            </code>
+        </pre>
+
+        <h4>while迴圈: 離開迴圈的條件</h4>
+        <pre>
+            <code class="python">
+            # ★ 離開迴圈的條件
+            # 不正常結束：發生錯誤、強制結束
+            # 正常結束：要設定條件
+            # 有離開的機會就不算無窮迴圈：無無窮迴圈
+            while True:
+                a = int(input("> "))
+                # 如果 a 等於 0 就離開迴圈
+                if a == 0:
+                    # break 離開這個迴圈
+                    break
+                print(a*a)
+            print("End")
+            </code>
+        </pre>
+
         <h4>遊戲: 剪刀石頭布</h4>
         <pre>
             <code class="python">
@@ -558,28 +586,6 @@
                 else:
                     print(f"答錯！正確答案是 {answer}")
                 print()
-            </code>
-        </pre>
-
-        <h4>while迴圈: 無窮迴圈</h4>
-        <pre>
-            <code class="python">
-            # ★ 無窮迴圈
-            while True:
-                a = int(input("> "))
-                print(a*a)
-            </code>
-        </pre>
-
-        <h4>while迴圈: 離開迴圈的條件</h4>
-        <pre>
-            <code class="python">
-            # ★ 離開迴圈的條件
-            while True:
-                a = int(input("> "))
-                if a == 0:
-                    break
-                print(a*a)
             </code>
         </pre>
     </section>
