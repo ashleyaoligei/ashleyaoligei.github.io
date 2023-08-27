@@ -525,13 +525,16 @@
             <code class="python">
             # ★ 剪刀石頭布
             import random
+            # list (串列) 可以放很多整數或字串
             alist = ["rock", "paper", "scissors"]
             n = int(input("猜拳猜幾次? "))
             print()
-            for i in range(n):
+            for i in range(1, n+1):
                 print(*alist)
-                player = input("要出什麼? ")
+                # 玩家 vs. 電腦
+                player = input(f"第 {i} 次要出什麼? ")
                 computer = random.choice(alist)
+                print(f"玩家: {player} vs. 電腦: {computer}")
                 if player == computer:
                     print("平手！")
                 elif player == "rock" and computer == "scissors":
