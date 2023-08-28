@@ -549,7 +549,47 @@
             </code>
         </pre>
 
-        <h4>測驗: 乘法測驗 (1/2)</h4>
+        <h4>遊戲: 剪刀石頭布 - 必須贏幾次</h4>
+        <pre>
+            <code class="python">
+            # ★ 剪刀石頭布
+            import random
+            alist = ["rock", "paper", "scissors"]
+            # 例如：3戰2勝、5戰3勝
+            n = int(input("必須贏幾次? "))
+            print()
+            countP = 0 # 計算玩家贏的次數
+            countC = 0 # 計算電腦贏的次數
+            while True:
+                print(*alist)
+                player = input(f"要出什麼? ")
+                computer = random.choice(alist)
+                print(f"玩家: {player} vs. 電腦: {computer}")
+                if player == computer:
+                    print("平手！")
+                elif player == "rock" and computer == "scissors":
+                    print("贏了！")
+                    countP = countP + 1
+                elif player == "paper" and computer == "rock":
+                    print("贏了！")
+                    countP = countP + 1
+                elif player == "scissors" and computer == "paper":
+                    print("贏了！")
+                    countP = countP + 1
+                else:
+                    print("輸給電腦了！")
+                    countC = countC + 1
+                print()
+                if countP == n:
+                    print("玩家獲勝！")
+                    break
+                elif countC == n:
+                    print("電腦獲勝！")
+                    break
+            </code>
+        </pre>
+
+        <h4>測驗: 乘法測驗 - 考幾題乘法 (1/2)</h4>
         <pre>
             <code class="python">
             # ★ 乘法測驗
@@ -557,12 +597,12 @@
             alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
             n = int(input("考幾題乘法? "))
             print()
-            for i in range(n):
+            for i in range(1, n+1):
                 a = random.choice(alist)
                 b = random.choice(alist)
-                answer = a * b
-                guess = int(input(f"{a} * {b} = "))
-                if guess == answer:
+                answer = a*b
+                guess = int(input(f"第 {i} 題: {a} * {b} = "))
+                if answer == guess:
                     print("答對！")
                 else:
                     print(f"答錯！正確答案是 {answer}")
@@ -570,25 +610,53 @@
             </code>
         </pre>
 
-        <h4>測驗: 乘法測驗 (2/2)</h4>
+        <h4>測驗: 乘法測驗 - 考幾題乘法 (2/2)</h4>
         <pre>
             <code class="python">
             # ★ 乘法測驗
             import random
-            alist = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-            blist = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            alist = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            blist = [1, 2, 3, 4, 5, 6, 7, 8, 9]
             n = int(input("考幾題乘法? "))
             print()
-            for i in range(n):
+            for i in range(1, n+1):
                 a = random.choice(alist)
                 b = random.choice(blist)
-                answer = a * b
-                guess = int(input(f"{a} * {b} = "))
-                if guess == answer:
+                answer = a*b
+                guess = int(input(f"第 {i} 題: {a} * {b} = "))
+                if answer == guess:
                     print("答對！")
                 else:
                     print(f"答錯！正確答案是 {answer}")
                 print()
+            </code>
+        </pre>
+
+        <h4>測驗: 乘法測驗 - 必須對幾題</h4>
+        <pre>
+            <code class="python">
+            # ★ 乘法測驗
+            import random
+            alist = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+            blist = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            n = int(input("必須對幾題? "))
+            print()
+            good_count = 0 # 答對的次數
+            while True:
+                a = random.choice(alist)
+                b = random.choice(blist)
+                answer = a*b
+                guess = int(input(f"{a} * {b} = "))
+                if answer == guess:
+                    print("答對！")
+                    good_count = good_count + 1
+                    print(f"目前答對 {good_count} 題")
+                else:
+                    print(f"答錯！正確答案是 {answer}")
+                print()
+                if good_count == n:
+                    print(f"恭喜完成 {n} 題！")
+                    break
             </code>
         </pre>
     </section>
