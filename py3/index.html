@@ -36,7 +36,7 @@
 <div id="home" class="jumbotron-main">
     <div class="container">
         <h1>第 3 部</h1>
-        <p class="lead">迴圈．數列．圖形</p>
+        <p class="lead">迴圈．數列．圖形．遊戲</p>
     </div>
 </div>
 
@@ -660,7 +660,7 @@
             </code>
         </pre>
 
-        <h4>測驗: 除法測驗</h4>
+        <h4>測驗: 除法測驗 - 計算商數跟餘數</h4>
         <pre>
             <code class="python">
             # ★ 除法測驗
@@ -673,8 +673,8 @@
             while True:
                 a = random.choice(alist)
                 b = random.choice(blist)
-                quotient = a//b
-                remainder = a%b
+                quotient = a//b # 商數答案
+                remainder = a%b # 餘數答案
                 guessQ = int(input(f"{a} // {b} = "))
                 guessR = int(input(f"{a} % {b} = "))
                 if guessQ == quotient and guessR == remainder:
@@ -682,11 +682,54 @@
                     good_count = good_count + 1
                     print(f"目前答對 {good_count} 題")
                 else:
-                    print(f"答錯！正確答案是 {answer}")
+                    print(f"答錯！正確商數是 {quotient} 餘數是 {remainder}")
                 print()
                 if good_count == n:
                     print(f"恭喜完成 {n} 題！")
                     break
+            </code>
+        </pre>
+
+        <h4>遊戲: 單字接龍 (1/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 單字接龍
+            player1 = input("玩家 1 名字: ")
+            player2 = input("玩家 2 名字: ")
+            current = 1 # 目前誰出
+            word1 = input(f"{player1} 出單字: ")
+            # 輸出第一個字母和最後一個字母
+            print(word1[0], word1[-1])
+            word2 = input(f"{player2} 出單字: ")
+            # 輸出第一個字母和最後一個字母
+            print(word2[0], word2[-1])
+            </code>
+        </pre>
+
+        <h4>遊戲: 單字接龍 (2/2)</h4>
+        <pre>
+            <code class="python">
+            # ★ 單字接龍
+            player1 = input("玩家 1 名字: ")
+            player2 = input("玩家 2 名字: ")
+            current = 1 # 目前誰出
+            word1 = ""
+            word2 = ""
+            print()
+            while True:
+                if current == 1:
+                    word1 = input(f"{player1} 出單字: ")
+                    if word2 != "" and word1[0] != word2[-1]:
+                        print(f"{player1} 輸了！")
+                        break
+                    current = 2
+                elif current == 2:
+                    word2 = input(f"{player2} 出單字: ")
+                    if word1 != "" and word2[0] != word1[-1]:
+                        print(f"{player2} 輸了！")
+                        break
+                    current = 1
+                print()
             </code>
         </pre>
     </section>
