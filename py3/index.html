@@ -709,8 +709,8 @@
         <pre>
             <code class="python">
             # ★ 單字接龍
-            player1 = input("玩家 1 名字: ")
-            player2 = input("玩家 2 名字: ")
+            player1 = input("玩家 1 的名字: ")
+            player2 = input("玩家 2 的名字: ")
             current = 1 # 目前誰出
             word1 = ""
             word2 = ""
@@ -718,15 +718,21 @@
             while True:
                 if current == 1:
                     word1 = input(f"{player1} 出單字: ")
+                    # 如果單字 2 不是空的
+                    # 而且單字 1 的開頭字母不等於單字 2 的結尾字母
                     if word2 != "" and word1[0] != word2[-1]:
                         print(f"{player1} 輸了！")
                         break
+                    # 換玩家 2 出單字
                     current = 2
                 elif current == 2:
                     word2 = input(f"{player2} 出單字: ")
+                    # 如果單字 1 不是空的
+                    # 而且單字 2 的開頭字母不等於單字 1 的結尾字母
                     if word1 != "" and word2[0] != word1[-1]:
                         print(f"{player2} 輸了！")
                         break
+                    # 換玩家 1 出單字
                     current = 1
                 print()
             </code>
