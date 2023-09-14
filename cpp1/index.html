@@ -46,145 +46,301 @@
         <h4>輸出: Hello, Ashley!</h4>
         <pre>
             <code class="cpp">
-            # ★ Hello(哈囉)
-            # print(): 輸出函式
-            # str: 字串(string) ""
-            print("Hello, Bug!")
-            print("Hello, Ashley!")
+            // ★ Hello(哈囉)
+            // main(): 主函式
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                cout << "Hello, Bug!" << endl;
+                cout << "Hello, Ashley!" << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸出: fruit(水果)</h4>
         <pre>
             <code class="cpp">
-            # ★ fruit(水果)
-            # print(): 輸出函式
-            # str: 字串(string) ""
-            print("apple")
-            print("banana")
-            print("cherry")
-            print("lemon")
+            // ★ fruit(水果)
+            // main(): 主函式
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                cout << "apple" << endl;
+                cout << "banana" << endl;
+                cout << "cherry" << endl;
+                cout << "lemon" << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸出: animal(動物)</h4>
         <pre>
             <code class="cpp">
-            # ★ animal(動物)
-            # print(): 輸出函式
-            # str: 字串(string) ""
-            print("dog", "cow", "wolf", "tiger")
-            print("cat", "deer", "zebra", "bear")
+            // ★ animal(動物)
+            // main(): 主函式
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                cout << "dog cow wolf tiger" << endl;
+                cout << "cat deer zebra bear" << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸入輸出: Hello, Ashley!</h4>
         <pre>
             <code class="cpp">
-            # ★ Hello(哈囉)
-            # input(): 輸入函式
-            # 變數: 裝字串或整數
-            # f-string: 可將變數放到字串裡面
-            # () 圓括 {} 花括
-            name1 = input("Name 1: ")
-            print(f"Hello, {name1}!")
-            name2 = input("Name 2: ")
-            print(f"Hello, {name2}!")
+            // ★ Hello(哈囉)
+            // 變數: 裝字串或整數
+            // main(): 主函式
+            // cin: 輸入
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 字串變數
+                string name1, name2;
+
+                cout << "Name 1: ";
+                cin >> name1;
+                cout << "Name 2: ";
+                cin >> name2;
+                cout << "Hello, " << name1 << "!" << endl;
+                cout << "Hello, " << name2 << "!" << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸入輸出: 造句1 (姐姐的頭髮越來越長)</h4>
         <pre>
             <code class="cpp">
-            # ★ 造句: 姐姐的頭髮越來越長
-            # input(): 輸入函式
-            # 變數: 裝字串或整數
-            # f-string: 可將變數放到字串裡面
-            # () 圓括 {} 花括
-            who = input("誰? ")
-            what = input("什麼? ")
-            how = input("怎樣? ")
-            print(f"{who}的{what}越來越{how}")
+            // ★ 造句: 姐姐的頭髮越來越長
+            // 變數: 裝字串或整數
+            // main(): 主函式
+            // cin: 輸入
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 字串變數
+                string who, what, how;
+
+                cout << "誰? ";
+                cin >> who;
+                cout << "什麼? ";
+                cin >> what;
+                cout << "怎樣? ";
+                cin >> how;
+                cout << who << "的" << what << "越來越" << how << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>數學: 加法和減法 (1/2)</h4>
         <pre>
             <code class="cpp">
-            # ★ 加法和減法
-            # int(): 轉整數函式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            print(a+b)
-            print(a-b)
+            // ★ 加法和減法
+            // 變數: 裝字串或整數
+            // main(): 主函式
+            // cin: 輸入
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 整數變數
+                int a, b;
+
+                cout << "a: ";
+                cin >> a;
+                cout << "b: ";
+                cin >> b;
+                cout << a+b << endl;
+                cout << a-b << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>數學: 加法和減法 (2/2)</h4>
         <pre>
             <code class="cpp">
-            # ★ 加法和減法
-            # int(): 轉整數函式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            c = int(input("c: "))
-            print(a+b-c)
-            print(a-b+c)
+            // ★ 加法和減法
+            // 變數: 裝字串或整數
+            // main(): 主函式
+            // cin: 輸入
+            // cout: 輸出
+            // endl: 輸出換行
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 整數變數
+                int a, b, c;
+
+                cout << "a: ";
+                cin >> a;
+                cout << "b: ";
+                cin >> b;
+                cout << "c: ";
+                cin >> c;
+                cout << a+b-c << endl;
+                cout << a-b+c << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸入輸出: 造句2 (小鳥在樹枝上唱歌)</h4>
         <pre>
             <code class="cpp">
-            # ★ 造句: 小鳥在樹枝上唱歌
-            who = input("誰? ")
-            where = input("哪裡? ")
-            what = input("做什麼? ")
-            print(f"{who}在{where}{what}")
+            // ★ 造句: 小鳥在樹枝上唱歌
+            // 變數: 裝字串或整數
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 字串變數
+                string who, where, what;
+
+                cout << "誰? ";
+                cin >> who;
+                cout << "哪裡? ";
+                cin >> where;
+                cout << "做什麼? ";
+                cin >> what;
+                cout << who << "在" << where << what << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>輸入輸出: 造句3 (姐姐跟媽媽去逛街)</h4>
         <pre>
             <code class="cpp">
-            # ★ 造句: 姐姐跟媽媽去逛街
-            who = input("誰? ")
-            with_who = input("跟誰? ")
-            what = input("做什麼? ")
-            print(f"{who}跟{with_who}{what}")
+            // ★ 造句: 姐姐跟媽媽去逛街
+            // 變數: 裝字串或整數
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 字串變數
+                string who, with_who, what;
+
+                cout << "誰? ";
+                cin >> who;
+                cout << "跟誰? ";
+                cin >> with_who;
+                cout << "做什麼? ";
+                cin >> what;
+                cout << who << "跟" << with_who << what << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>數學: 加減法等式 (1/2)</h4>
         <pre>
             <code class="cpp">
-            # ★ 加減法等式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            print(f"{a}+{b} = {a+b}")
-            print(f"{a}-{b} = {a-b}")
+            // ★ 加減法等式
+            // 變數: 裝字串或整數
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 整數變數
+                int a, b;
+
+                cout << "a: ";
+                cin >> a;
+                cout << "b: ";
+                cin >> b;
+                cout << a << "+" << b << " = "
+                     << a+b << endl;
+                cout << a << "-" << b << " = "
+                     << a-b << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>數學: 加減法等式 (2/2)</h4>
         <pre>
             <code class="cpp">
-            # ★ 加減法等式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            c = int(input("c: "))
-            print(f"{a}+{b}-{c} = {a+b-c}")
-            print(f"{a}-{b}+{c} = {a-b+c}")
+            // ★ 加減法等式
+            // 變數: 裝字串或整數
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 整數變數
+                int a, b, c;
+
+                cout << "a: ";
+                cin >> a;
+                cout << "b: ";
+                cin >> b;
+                cout << "c: ";
+                cin >> c;
+                cout << a << "+" << b << "-" << c << " = "
+                     << a+b-c << endl;
+                cout << a << "-" << b << "+" << c << " = "
+                     << a-b+c << endl;
+                return 0;
+            }
             </code>
         </pre>
 
         <h4>數學: 乘法等式</h4>
         <pre>
             <code class="cpp">
-            # ★ 乘法等式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            print(f"{a}*{b} = {a*b}")
+            // ★ 乘法等式
+
+            #include &lt;iostream&gt;
+            using namespace std;
+            int main()
+            {
+                // 整數變數
+                int a, b;
+
+                cout << "a: ";
+                cin >> a;
+                cout << "b: ";
+                cin >> b;
+                cout << a << "*" << b << " = "
+                     << a*b << endl;
+                return 0;
+            }
             </code>
         </pre>
 
