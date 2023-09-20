@@ -21,6 +21,7 @@ pre code {
 
 .navbar-brand {
     color: #dec1cd !important;
+    font-weight: bold;
 }
 
 .navbar-toggler {
