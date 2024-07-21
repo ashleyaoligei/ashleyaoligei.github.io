@@ -47,7 +47,7 @@
             <code class="lua">
             -- ★ Hello(哈囉)
             -- print(): 輸出函式
-            -- str: 字串(string) ""
+            -- string: 字串 ""
             print("Hello, Bug!")
             print("Hello, Ashley!")
             </code>
@@ -58,7 +58,7 @@
             <code class="lua">
             -- ★ fruit(水果)
             -- print(): 輸出函式
-            -- str: 字串(string) ""
+            -- string: 字串 ""
             print("apple")
             print("banana")
             print("cherry")
@@ -71,9 +71,10 @@
             <code class="lua">
             -- ★ animal(動物)
             -- print(): 輸出函式
-            -- str: 字串(string) ""
-            print("dog", "cow", "wolf", "tiger")
-            print("cat", "deer", "zebra", "bear")
+            -- string.format("格式字串", 參數...)
+            -- %s:字串, %d:整數, %f浮點數
+            print(string.format("%s %s %s", "dog", "cow", "wolf"))
+            print(string.format("%s %s %s", "cat", "deer", "zebra"))
             </code>
         </pre>
 
@@ -81,14 +82,17 @@
         <pre>
             <code class="lua">
             -- ★ Hello(哈囉)
-            -- input(): 輸入函式
-            -- 變數: 裝字串或整數
-            -- f-string: 可將變數放到字串裡面
-            -- () 圓括 {} 花括
-            name1 = input("Name 1: ")
-            print(f"Hello, {name1}!")
-            name2 = input("Name 2: ")
-            print(f"Hello, {name2}!")
+            -- local 宣告區域變數
+            -- io.write(): 提示輸入函式
+            -- io.read(): 接收輸入函式
+            -- "字串"..字串變數.."字串"
+            local name1, name2
+            io.write("Name1: ")
+            name1 = io.read()
+            print("Hello, "..name1.."!")
+            io.write("Name2: ")
+            name2 = io.read()
+            print("Hello, "..name2.."!")
             </code>
         </pre>
 
