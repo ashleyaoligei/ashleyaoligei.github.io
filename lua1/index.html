@@ -46,8 +46,8 @@
         <pre>
             <code class="lua">
             -- ★ Hello(哈囉)
-            -- print(): 輸出函式
-            -- string: 字串 ""
+            -- print("字串"): 輸出函式
+            -- string: "字串"
             print("Hello, Bug!")
             print("Hello, Ashley!")
             </code>
@@ -57,8 +57,8 @@
         <pre>
             <code class="lua">
             -- ★ fruit(水果)
-            -- print(): 輸出函式
-            -- string: 字串 ""
+            -- print("字串"): 輸出函式
+            -- string: "字串"
             print("apple")
             print("banana")
             print("cherry")
@@ -70,11 +70,11 @@
         <pre>
             <code class="lua">
             -- ★ animal(動物)
-            -- print(): 輸出函式
-            -- string.format("格式字串", 參數...)
-            -- %s:字串, %d:整數, %f浮點數
-            print(string.format("%s %s %s", "dog", "cow", "wolf"))
-            print(string.format("%s %s %s", "cat", "deer", "zebra"))
+            -- print("字串"): 輸出函式
+            -- string.format("格式字串", 參數...): 格式字串函式
+            --        %s:字串, %d:整數, %f浮點數
+            print(string.format("%s and %s", "fox", "rabbit"))
+            print(string.format("%s and %s", "dog", "cat"))
             </code>
         </pre>
 
@@ -83,31 +83,41 @@
             <code class="lua">
             -- ★ Hello(哈囉)
             -- local 宣告區域變數
-            -- io.write(): 提示輸入函式
-            -- io.read(): 接收輸入函式
-            -- "字串"..字串變數.."字串"
-            local name1, name2
+            -- io.write("字串"): 輸出函式(輸出後不換行)
+            -- io.read(): 輸入函式
+            -- string.format("格式字串", 參數...): 格式字串函式
+            --        %s:字串, %d:整數, %f浮點數
+            local name1, str1
+            local name2, str2
             io.write("Name1: ")
             name1 = io.read()
-            print("Hello, "..name1.."!")
+            str1 = string.format("Hello, %s!", name1)
+            print(str1)
             io.write("Name2: ")
             name2 = io.read()
-            print("Hello, "..name2.."!")
+            str2 = string.format("Hello, %s!", name2)
+            print(str2)
             </code>
         </pre>
 
-        <h4>輸入輸出: 造句1 (姐姐的頭髮越來越長)</h4>
+        <h4>輸入輸出: 造句1 (姊姊的頭髮越來越長)</h4>
         <pre>
             <code class="lua">
-            -- ★ 造句: 姐姐的頭髮越來越長
-            -- input(): 輸入函式
-            -- 變數: 裝字串或整數
-            -- f-string: 可將變數放到字串裡面
-            -- () 圓括 {} 花括
-            who = input("誰? ")
-            what = input("什麼? ")
-            how = input("怎樣? ")
-            print(f"{who}的{what}越來越{how}")
+            -- ★ 造句: 姊姊的頭髮越來越長
+            -- local 宣告區域變數
+            -- io.write("字串"): 輸出函式(輸出後不換行)
+            -- io.read(): 輸入函式
+            -- string.format("格式字串", 參數...): 格式字串函式
+            --        %s:字串, %d:整數, %f浮點數
+            local who, what, how, astr
+            io.write("誰? ")
+            who = io.read()
+            io.write("什麼? ")
+            what = io.read()
+            io.write("怎樣? ")
+            how = io.read()
+            astr = string.format("%s的%s越來越%s", who, what, how)
+            print(astr)
             </code>
         </pre>
 
@@ -115,9 +125,14 @@
         <pre>
             <code class="lua">
             -- ★ 加法和減法
-            -- int(): 轉整數函式
-            a = int(input("a: "))
-            b = int(input("b: "))
+            -- tonumber("字串"): 字串轉數值函式
+            local a, b
+            io.write("a: ")
+            a = io.read()
+            a = tonumber(a)
+            io.write("b: ")
+            b = io.read()
+            b = tonumber(b)
             print(a+b)
             print(a-b)
             </code>
@@ -128,9 +143,16 @@
             <code class="lua">
             -- ★ 加法和減法
             -- int(): 轉整數函式
-            a = int(input("a: "))
-            b = int(input("b: "))
-            c = int(input("c: "))
+            local a, b, c
+            io.write("a: ")
+            a = io.read()
+            a = tonumber(a)
+            io.write("b: ")
+            b = io.read()
+            b = tonumber(b)
+            io.write("c: ")
+            c = io.read()
+            c = tonumber(c)
             print(a+b-c)
             print(a-b+c)
             </code>
@@ -140,21 +162,41 @@
         <pre>
             <code class="lua">
             -- ★ 造句: 小鳥在樹枝上唱歌
-            who = input("誰? ")
-            where = input("哪裡? ")
-            what = input("做什麼? ")
-            print(f"{who}在{where}{what}")
+            -- local 宣告區域變數
+            -- io.write("字串"): 輸出函式(輸出後不換行)
+            -- io.read(): 輸入函式
+            -- string.format("格式字串", 參數...): 格式字串函式
+            --        %s:字串, %d:整數, %f浮點數
+            local who, where, what, astr
+            io.write("誰? ")
+            who = io.read()
+            io.write("哪裡? ")
+            where = io.read()
+            io.write("做什麼? ")
+            what = io.read()
+            astr = string.format("%s在%s%s", who, where, what)
+            print(astr)
             </code>
         </pre>
 
-        <h4>輸入輸出: 造句3 (姐姐跟媽媽去逛街)</h4>
+        <h4>輸入輸出: 造句3 (姊姊跟媽媽去逛街)</h4>
         <pre>
             <code class="lua">
-            -- ★ 造句: 姐姐跟媽媽去逛街
-            who = input("誰? ")
-            with_who = input("跟誰? ")
-            what = input("做什麼? ")
-            print(f"{who}跟{with_who}{what}")
+            -- ★ 造句: 姊姊跟媽媽去逛街
+            -- local 宣告區域變數
+            -- io.write("字串"): 輸出函式(輸出後不換行)
+            -- io.read(): 輸入函式
+            -- string.format("格式字串", 參數...): 格式字串函式
+            --        %s:字串, %d:整數, %f浮點數
+            local who, with_who, what, astr
+            io.write("誰? ")
+            who = io.read()
+            io.write("跟誰? ")
+            with_who = io.read()
+            io.write("做什麼? ")
+            what = io.read()
+            astr = string.format("%s跟%s%s", who, with_who, what)
+            print(astr)
             </code>
         </pre>
 
@@ -273,10 +315,10 @@
             </code>
         </pre>
 
-        <h4>輸入輸出: 造句4 (姐姐下星期三要去新竹)</h4>
+        <h4>輸入輸出: 造句4 (姊姊下星期三要去新竹)</h4>
         <pre>
             <code class="lua">
-            -- ★ 造句: 姐姐下星期三要去新竹
+            -- ★ 造句: 姊姊下星期三要去新竹
             who = input("誰? ")
             when = input("哪時候? ")
             where = input("去哪裡? ")
